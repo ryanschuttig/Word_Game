@@ -27229,6 +27229,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _utils = require("../../utils");
 var _data = require("../../data");
+var _guessInput = require("../GuessInput");
+var _guessInputDefault = parcelHelpers.interopDefault(_guessInput);
 // Pick a random word on every pageload.
 const answer = (0, _utils.sample)((0, _data.WORDS));
 // To make debugging easier, we'll log the solution in the console.
@@ -27237,7 +27239,11 @@ console.info({
 });
 function Game() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: "Put a game here!"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _guessInputDefault.default), {}, void 0, false, {
+            fileName: "src/components/Game/Game.js",
+            lineNumber: 16,
+            columnNumber: 7
+        }, this)
     }, void 0, false);
 }
 _c = Game;
@@ -27250,7 +27256,7 @@ $RefreshReg$(_c, "Game");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils":"en4he","../../data":"9kapS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"en4he":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils":"en4he","../../data":"9kapS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../GuessInput":"7KsIF"}],"en4he":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "sample", ()=>sample);
@@ -27493,7 +27499,64 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"cxSZo":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"7KsIF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _guessInputDefault.default));
+var _guessInput = require("./GuessInput");
+parcelHelpers.exportAll(_guessInput, exports);
+var _guessInputDefault = parcelHelpers.interopDefault(_guessInput);
+
+},{"./GuessInput":"bL9cA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bL9cA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b46b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b46b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function GuessInput() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        class: "guess-input-wrapper",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                for: "guess-input",
+                children: "Enter guess:"
+            }, void 0, false, {
+                fileName: "src/components/GuessInput/GuessInput.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                id: "guess-input",
+                type: "text"
+            }, void 0, false, {
+                fileName: "src/components/GuessInput/GuessInput.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/GuessInput/GuessInput.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = GuessInput;
+exports.default = GuessInput;
+var _c;
+$RefreshReg$(_c, "GuessInput");
+
+  $parcel$ReactRefreshHelpers$b46b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cxSZo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _headerDefault.default));
